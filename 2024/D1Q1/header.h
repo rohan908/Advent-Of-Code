@@ -37,7 +37,4 @@ To find the total distance between the left list and the right list, add up the 
 
 Your actual left and right lists contain many location IDs. What is the total distance between your lists?*/
 
-#include <math.h>
-#include <stdio.h>
-#include <iostream>
 #include "../../lib/helper.h"

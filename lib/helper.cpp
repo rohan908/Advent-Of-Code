@@ -13,3 +13,16 @@ bool checkMakeFile(int argc, char* argv[]){
     fclose(f);
     return true;
 }
+
+bool storeLineInList(std::ifstream& file, std::vector<int>* numList){
+    std::string line;
+    if (std::getline(file, line)){
+        std::stringstream ss(line);
+        int num;
+        while (ss >> num) {
+            numList->push_back(num);
+        }
+        return true;
+    }
+    return false;
+}
